@@ -40,11 +40,10 @@ tribble(
 ```{r skills, warning=FALSE, message=FALSE}
 tribble(
   ~Title,
-  "R", 
-  "Java",
-  "SAS",
   "Data Mining: naive bayes, support vector machines, neural networks, random forests, visualizations, data cleaning",
   "Statistical Procedures: ANOVA, MLR, EDA, simulations from probability models, randomization-based experiments",
+  "R, SAS, Java",
+  "Fluent in Spanish",
 ) %>% 
   brief_entries(
     Title,
