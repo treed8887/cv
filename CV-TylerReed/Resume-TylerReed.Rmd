@@ -51,13 +51,6 @@ tribble(
   )
 ```
 
-<!-- Import, manage, and clean data. -->
-<!-- Create graphical displays and numerical summaries of data for exploratory analysis and presentations. -->
-<!-- Write R programs for simulations from probability models and randomization-based experiments. -->
-<!-- Use source documentation and other resources to troubleshoot and extend R programs. -->
-<!-- Write clear, efficient, and well-documented R programs. -->
-
-
 # Experience
 
 ```{r experience, warning=FALSE, message=FALSE}
