@@ -43,18 +43,19 @@ tribble(
   "R", 
   "Java",
   "SAS",
-  "Data Mining: Naive Bayes, Support Vector Machines, Neural Networks, Random Forests, Visualizations",
-  "Statistical Modeling/Analysis: ANOVA, MLR, EDA",
+  "Data Mining: naive bayes, support vector machines, neural networks, random forests, visualizations, data cleaning",
+  "Statistical Procedures: ANOVA, MLR, EDA, simulations from probability models, randomization-based experiments",
 ) %>% 
   brief_entries(
     Title,
   )
 ```
 
-<!-- design software process for analyzing data -->
-<!-- • build a model for common data mining technique such as Naive Bayes -->
-<!-- • evaluate the results - for effectiveness and appropriateness - of different models on the same data -->
-<!-- • describe the nature of a data set using software tools such as clustering and visualization -->
+<!-- Import, manage, and clean data. -->
+<!-- Create graphical displays and numerical summaries of data for exploratory analysis and presentations. -->
+<!-- Write R programs for simulations from probability models and randomization-based experiments. -->
+<!-- Use source documentation and other resources to troubleshoot and extend R programs. -->
+<!-- Write clear, efficient, and well-documented R programs. -->
 
 
 # Experience
@@ -64,7 +65,7 @@ tribble(
   ~Year, ~Title, ~Desc,
   "2020-present", "President/Founder", "Data Science Society at GVSU",
   "2020-present", "Organizing Committee", "Big Data Ignite of West Michigan",
-  "2010-2016", "IT Project Mgr. | IT Support Ops Supervisor", "Missionary Training Center",
+  "2010-2016", "IT Project Mgr. | IT Support Supervisor", "Missionary Training Center",
   "2013", "Technical Operations Intern", "Alaska USA Federal Credit Union",
 ) %>% 
   detailed_entries(
