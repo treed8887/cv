@@ -1,0 +1,86 @@
+---
+name: Tylersss
+surname: Reed
+position: "Student"
+address: "1315 Winterwood Dr NE, Grand Rapids, MI 49525"
+phone: "702-497-1046" 
+profilepic: myFaceshot.jpg
+email: "tylersreed@me.com"
+github: treed8887
+linkedin: linkedin.com/in/tylerreedsa/
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "Graduate student in Data Science & Analytics at Grand Valley State University transitioning from IT Ops to applications of data science within healtchare."
+output: 
+  vitae::moderncv:
+    theme: classic
+---
+
+<!-- Attribution -->
+<!-- Ideas for the Application were derived from [MitchellOharaWild](https://github.com/mitchelloharawild/vitae) and the `moderncv` template. -->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Education
+
+```{r education, warning=FALSE, message=FALSE}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Desc,
+  "M.S. Data Science & Analytics", "2022", "Grand Valley State University", "Grand Rapids, Michigan", "President, Data Science Society",
+  "B.S. Marriott School of Business", "2016", "Brigham Young University", "Provo, Utah", "President, Marriott School of Business EVM Club"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where, Desc)
+```
+
+# Top Skills/Programming Languages
+
+```{r skills, warning=FALSE, message=FALSE}
+tribble(
+  ~Title,
+  "R", 
+  "Java",
+  "SAS",
+  "Data Mining",
+  "Exploratory Data Analysis"
+) %>% 
+  brief_entries(
+    Title,
+
+  )
+```
+
+# Experience
+
+```{r experience, warning=FALSE, message=FALSE}
+tribble(
+  ~Year, ~Title, ~Desc,
+  "2020-present", "President", "Data Science Society",
+  "2020-present", "Organizing Committee", "Big Data Ignite",
+  "2010-2016", "Project Mgr. | Support Ops Supervisor", "Missionary Training Center",
+  "2013", "Technical Operations Intern", "Alaska USA FCU",
+) %>% 
+  detailed_entries(
+    Title,
+    Year, 
+    Desc
+  )
+```
+
+# Volunteer
+
+```{r volunteer, message=FALSE, warning=FALSE}
+tribble(
+  ~Year, ~Title, ~Desc,
+  "2018-2019", "Prison Minister", "Federal Bureau of Prisons",
+  "2015-2016", "Refugee Resettlement Representative", "Catholic Community Services",
+  "2006-2008", "Full-time Volunteer", "Chile Rancagua Mission"
+) %>% 
+  brief_entries(
+    Title,
+    Year, 
+    Desc
+  )
+```
