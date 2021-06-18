@@ -1,15 +1,15 @@
 ---
-name: Tylersss
+name: Tyler
 surname: Reed
-position: "Student"
+profilepic: myFaceshot.jpg
+# position: "Student"
 address: "1315 Winterwood Dr NE, Grand Rapids, MI 49525"
 phone: "702-497-1046" 
-profilepic: myFaceshot.jpg
 email: "tylersreed@me.com"
 github: treed8887
 linkedin: linkedin.com/in/tylerreedsa/
-date: "`r format(Sys.time(), '%B %Y')`"
-aboutme: "Graduate student in Data Science & Analytics at Grand Valley State University transitioning from IT Ops to applications of data science within healtchare."
+# date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "Graduate student in Data Science & Analytics at GVSU with six years of IT experience transitioning from IT Ops to data science within healtchare."
 output: 
   vitae::moderncv:
     theme: classic
@@ -28,11 +28,11 @@ library(vitae)
 ```{r education, warning=FALSE, message=FALSE}
 library(tibble)
 tribble(
-  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Desc,
-  "M.S. Data Science & Analytics", "2022", "Grand Valley State University", "Grand Rapids, Michigan", "President, Data Science Society",
-  "B.S. Marriott School of Business", "2016", "Brigham Young University", "Provo, Utah", "President, Marriott School of Business EVM Club"
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Desc1,
+  "M.S. Data Science & Analytics", "2022", "Grand Valley State University", "Grand Rapids, Michigan", "Appointment, Dean of Graduate School Taskforce",
+  "B.S. Marriott School of Business", "2016", "Brigham Young University", "Provo, Utah", "Research Assistant to Dr. Alonzo Cook, DPN Lab",
 ) %>% 
-  detailed_entries(Degree, Year, Institution, Where, Desc)
+  detailed_entries(Degree, Year, Institution, Where, Desc1)
 ```
 
 # Top Skills/Programming Languages
@@ -43,24 +43,29 @@ tribble(
   "R", 
   "Java",
   "SAS",
-  "Data Mining",
-  "Exploratory Data Analysis"
+  "Data Mining: Naive Bayes, Support Vector Machines, Neural Networks, Random Forests, Visualizations",
+  "Statistical Modeling/Analysis: ANOVA, MLR, EDA",
 ) %>% 
   brief_entries(
     Title,
-
   )
 ```
+
+<!-- design software process for analyzing data -->
+<!-- • build a model for common data mining technique such as Naive Bayes -->
+<!-- • evaluate the results - for effectiveness and appropriateness - of different models on the same data -->
+<!-- • describe the nature of a data set using software tools such as clustering and visualization -->
+
 
 # Experience
 
 ```{r experience, warning=FALSE, message=FALSE}
 tribble(
   ~Year, ~Title, ~Desc,
-  "2020-present", "President", "Data Science Society",
-  "2020-present", "Organizing Committee", "Big Data Ignite",
-  "2010-2016", "Project Mgr. | Support Ops Supervisor", "Missionary Training Center",
-  "2013", "Technical Operations Intern", "Alaska USA FCU",
+  "2020-present", "President/Founder", "Data Science Society at GVSU",
+  "2020-present", "Organizing Committee", "Big Data Ignite of West Michigan",
+  "2010-2016", "IT Project Mgr. | IT Support Ops Supervisor", "Missionary Training Center",
+  "2013", "Technical Operations Intern", "Alaska USA Federal Credit Union",
 ) %>% 
   detailed_entries(
     Title,
