@@ -3,9 +3,9 @@ name: Tyler
 surname: Reed
 profilepic: myFaceshot.jpg
 # position: "Student"
-address: "1315 Winterwood Dr NE, Grand Rapids, MI 49525"
-phone: "702-497-1046" 
-email: "tylersreed@me.com"
+address: "Grand Rapids, MI 49525"
+phone: "702-xxx-xxxx" 
+email: "tyler@..."
 github: treed8887
 linkedin: linkedin.com/in/tylerreedsa/
 # date: "`r format(Sys.time(), '%B %Y')`"
